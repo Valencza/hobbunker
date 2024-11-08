@@ -1,0 +1,7 @@
+manifest:
+  path: public/manifest.json
+entrypoints:
+  - url: http://devhob.createch.id
+    platform: android
+    name: Sapa Bansos
+    manifest: public/manifest.json

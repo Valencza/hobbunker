@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+    <html>
+
+    <head>
+        <style>
+            html, body{
+                display: grid;
+                place-items: center;
+            }
+            main {
+                /* transform: rotate(90); */
+            }
+            .photo {
+                /* transform: rotate(90); */
+                object-fit: cover;
+            }
+            table{
+                font-size: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <main style="width: 100vw;">
+            <table>
+                <tr>
+                    <td> 
+                        <img src="{{public_path('assets/media/logos/blueLogo.svg')}}" width="150" alt="HOB Logo" style="margin-right: 100px">
+                    </td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="width: 100%; text-align: right">
+                        <div>
+                            <h3 style="font-size: 15px">DAFTAR KARYAWAN PT. HARPA OCEAN BERSAMA</h3>
+                            <table>
+                                <tr>
+                                    <td>Tanggal Dokumen</td>
+                                    <td>:</td>
+                                    <td> {{$startDate}} @if ($startDate != $endDate)
+                                        - {{$endDate}} @endif</td>
+                                        
+                                </tr>
+                                <tr>
+                                    <td>Monitoring Oleh</td>
+                                    <td>:</td>
+                                    <td>{{Auth::user()->name}}</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+            <table border="1" cellspacing="0" cellpadding="5" style="margin: auto; margin-top: 50px; width: 100%">
+                <tr>
+                    <th style="text-align: center">Nama</th>
+                    <th style="text-align: center">Jabatan</th>
+                    <th style="text-align: center">Email</th>
+                    <th style="text-align: center">No. Hp Darurat</th>
+                    <th style="text-align: center">Alamat</th>
+                    <th style="text-align: center">Tanggal Lahir</th>
+                    <th style="text-align: center">Jumlah Tanggungan</th>
+                    <th style="text-align: center">Lokasi</th>
+                </tr>
+                @foreach ($masterUsers as $masterUser)
+                <tr>
+                    <td style="text-align: center">{{$masterUser->name}}</td>
+                    <td style="text-align: center">{{$masterUser->masterRole->name}}</td>
+                    <td style="text-align: center">{{$masterUser->email}}</td>
+                    <td style="text-align: center">{{$masterUser->emergency_phone}}</td>
+                    <td style="text-align: center">{{$masterUser->address}}</td>
+                    <td style="text-align: center">{{ \Carbon\Carbon::parse($masterUser->birth)->format('d-m-Y') }}</td>
+                    <td style="text-align: center">{{$masterUser->dependent}}</td>
+                    <td style="text-align: center">{{$masterUser->position}}</td>
+                </tr>
+                @endforeach
+            </table>
+            <br>
+            <table style="width: 100%">
+                <tr>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="width: 80%; text-align: right">
+                        Telah diketahui dan dikonfirmasi oleh
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="color: white">-</td>
+                    <td style="width: 80%; text-align: right">
+                        {{Auth::user()->name}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </td>
+            </table>
+        </main>
+    </body>
+
+    </html>

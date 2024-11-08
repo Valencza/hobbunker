@@ -1,0 +1,53 @@
+.dashboard-toolbar {
+    background: url("../media/dashboard/bg.png") !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1595px;
+    }
+}
+
+.bg-blue-600 {
+    background: #1b84ff !important;
+}
+
+.text-green {
+    color: #2CC773 !important;
+}
+
+.text-gray {
+    color: #AFA7A7 !important;
+}
+
+.bg-gray {
+    background: #AFA7A7 !important;
+}
+
+.border-gray {
+    border-color: #CCCACB !important;
+}
+
+.btn-light-primary {
+    color: #2CC773 !important;
+}
+
+.btn-light-primary:hover {
+    color: #fff !important;
+    background: #2CC773 !important;
+}
+
+.bg-green {
+    background: #2CC773 !important;
+}
+
+.text-blue {
+    color: #4A89DC;
+}
+
+.text-yellow {
+    color: #E8B70C;
+}

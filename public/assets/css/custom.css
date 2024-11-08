@@ -1,0 +1,197 @@
+/* global */
+.text-primary {
+    color: #4a89dc !important;
+}
+
+.text-secondary {
+    color: #1b84ff !important;
+}
+
+.bg-primary {
+    background: #5b9aeb !important;
+}
+
+.bg-blue-secondary {
+    background-color: #f2f9ff !important;
+    padding: 10px;
+}
+
+.bg-blue-600 {
+    background: #1b84ff !important;
+}
+
+.bg-red-600 {
+    background: #FE5041 !important;
+}
+
+.text-2xl {
+    font-size: 3rem;
+}
+
+/* login */
+.login-background {
+    min-height: 100vh;
+    padding: 3rem;
+    background-image: url("../media/backgrounds/login_background.png");
+    background-color: #0d112f;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login-background section img {
+    padding: 7rem 0;
+}
+
+.text-2xl {
+    font-size: 2.5rem;
+}
+
+.text-blue-400 {
+    color: #4a89dc !important;
+}
+
+.bg-blue-400 {
+    background: #5b9aeb !important;
+}
+.text-blue-500{
+    color: #5493E5 !important;
+}
+
+.rounded-2xl {
+    border-radius: 1rem !important;
+}
+
+.rounded-3xl {
+    border-radius: 1.5rem !important;
+}
+/*end login*/
+
+/*home*/
+.icon-size {
+    font-size: 1.3rem !important;
+}
+
+.label-icon {
+    background: #f1f1f4 !important;
+}
+
+.card-progress {
+    background-color: #0d112f !important;
+    background-image: url("../media/backgrounds/backgroundProgress.svg") !important;
+}
+
+.card-home {
+    column-gap: 20px;
+}
+.card-home .card {
+    max-width: 15rem !important;
+    margin-top: 1rem !important;
+}
+.img-profile {
+    background-color: rgb(87, 87, 250);
+    color: white;
+    display: grid;
+    place-items: center;
+}
+
+.centering {
+    display: grid;
+    place-items: center;
+}
+/* end home */
+
+/* attendance */
+.card-attendance {
+    margin-bottom: 42rem;
+}
+
+.card-attendance-s{
+    margin-bottom: 32.5rem;
+}
+
+.map{
+    min-height: 78vh;
+    width: 100vw;
+}
+/* location */
+#map {
+    min-height: 78vh;
+    width: 100vw;
+}
+
+.map-form{
+    width: 90%;
+    bottom: 3% !important;
+}
+
+/* dashboard */
+.dashboard-toolbar{
+    height: 100px;
+}
+/* end dashboard */
+
+
+.w-fit {
+    width: fit-content;
+}
+
+.file-preview {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #1b84ff;
+    border-radius: 5px;
+    background-color: #73b4ff;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.file-preview  img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.file-preview  i {
+    font-size: 2rem;
+    color: white;
+}
+
+#shadow-aside{
+    display: none;
+    background-color: rgba(0,0,0,.3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 80;
+}
+
+#shadow-aside > div {
+    position: fixed;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    top: 10px;
+    right: 10px;
+}
+
+.aside  {
+    background-color: #f1f1f3;
+    border-radius: 10px;
+    z-index: 90;
+}
+
+#sidebar-btn > *:first-child {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    #sidebar-btn > *:first-child {
+        display: inline;
+    }
+}
